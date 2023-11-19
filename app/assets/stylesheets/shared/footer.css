@@ -1,5 +1,5 @@
 footer {
-  height: 50px;
+  height: 80px;
   color: black;
   background-color: #57C3E9;
   position: fixed;
@@ -10,5 +10,5 @@ footer {
 
 footer p {
   text-align: center;
-  line-height: 50px;
+  line-height: 80px;
 }
