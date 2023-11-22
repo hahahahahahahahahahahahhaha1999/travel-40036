@@ -24,6 +24,7 @@ header.header div.header__bar.row h1.grid-6 {
 header.header div.header__bar.row h1.grid-6 a {
   display: block;
   font-size: 40px;
+  font-weight: 900;
   text-decoration: none;
   color: #F00;
   font-family: system-ui;
