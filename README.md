@@ -16,7 +16,6 @@ has_many :travels
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | name               | string     | null: false                    |
-| region             | string     | null: false                    |
 
 ### Association
 
@@ -33,7 +32,7 @@ has_many :travels
 | partner            | string     | null: false                    |
 | price              | integer    | null: false                    |
 | travel_site        | integer    | null: false                    |
-| comment            | text       | null: false                    |
+| content            | text       | null: false                    |
 | user               | references | null: false, foreign_key: true | 
 | prefecture        | references | null: false, foreign_key: true | 
 

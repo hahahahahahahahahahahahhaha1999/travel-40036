@@ -1,11 +1,60 @@
 <%= render "shared/header" %>
 
-
 <div class="map">
   <div id="my-map"></div>
   <script>
+  var areaLinks = {
+  1: '/prefectures/1',
+  2: '/prefectures/2',
+  3: '/prefectures/3',
+  4: '/prefectures/4',
+  5: '/prefectures/5',
+  6: '/prefectures/6',
+  7: '/prefectures/7',
+  8: '/prefectures/8',
+  9: '/prefectures/9',
+  10: '/prefectures/10',
+  11: '/prefectures/11',
+  12: '/prefectures/12',
+  13: '/prefectures/13',
+  14: '/prefectures/14',
+  15: '/prefectures/15',
+  16: '/prefectures/16',
+  17: '/prefectures/17',
+  18: '/prefectures/18',
+  19: '/prefectures/19',
+  20: '/prefectures/20',
+  21: '/prefectures/21',
+  22: '/prefectures/22',
+  23: '/prefectures/23',
+  24: '/prefectures/24',
+  25: '/prefectures/25',
+  26: '/prefectures/26',
+  27: '/prefectures/27',
+  28: '/prefectures/28',
+  29: '/prefectures/29',
+  30: '/prefectures/30',
+  31: '/prefectures/31',
+  32: '/prefectures/32',
+  33: '/prefectures/33',
+  34: '/prefectures/34',
+  35: '/prefectures/35',
+  36: '/prefectures/36',
+  37: '/prefectures/37',
+  38: '/prefectures/38',
+  39: '/prefectures/39',
+  40: '/prefectures/40',
+  41: '/prefectures/41',
+  42: '/prefectures/42',
+  43: '/prefectures/43',
+  44: '/prefectures/44',
+  45: '/prefectures/45',
+  46: '/prefectures/46',
+  47: '/prefectures/47'
+  };
+
   var d = new jpmap.japanMap(document.getElementById("my-map"), {
-  areas: [
+    areas: [
     {code : 1, name: "北海道", color: "#7f7eda", hoverColor: "#b3b2ee"},
     {code : 2, name: "青森", color: "#759ef4", hoverColor: "#98b9ff"},
     {code : 3, name: "岩手", color: "#759ef4", hoverColor: "#98b9ff"},
@@ -56,15 +105,18 @@
   ],
 
   showsPrefectureName: true,
-  width: 950,
+  width: 1000,
   movesIslands: true,
   borderLineColor: "#000000",
   lang: 'ja',
   lineColor: "#00ffff",
   onSelect: function(data){
-     location.href = areaLinks[data.area.code];
+    location.href = areaLinks[data.area.code];
   }
 });
   </script>
-</div>
+  </div>
+
+<%= link_to 'New Travel', new_travel_path, class: "contribution" %>
+
 <%= render "shared/footer" %>
